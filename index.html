@@ -4,19 +4,6 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>ERpots | Pottery by Edward G. R. Ruse</title>
-
-  <!-- If you have the Grafic font files, place them in /fonts and uncomment this block
-  <style>
-    @font-face {
-      font-family: "Grafic";
-      src: url("fonts/Grafic.woff2") format("woff2"),
-           url("fonts/Grafic.woff") format("woff");
-      font-weight: 400 700;
-      font-style: normal;
-      font-display: swap;
-    }
-  </style>
-  -->
   <style>
     :root{
       --sand:#d6c2ab;   /* background */
@@ -26,12 +13,11 @@
     *{box-sizing:border-box}
     html,body{margin:0}
     body{
-      font-family: "Grafic", system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, sans-serif;
+      font-family: system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, sans-serif;
       color:var(--earth);
       background-color:var(--sand);
       min-height:100vh;
     }
-
     header{
       padding:28px 40px 8px;
       display:flex;
@@ -47,16 +33,13 @@
       transition:transform .15s ease, background-color .15s ease, color .15s ease;
     }
     .newsletter a:hover{background:var(--earth);color:#fff;transform:translateY(-1px)}
-
     main{padding:22px 40px 48px}
-
-    /* 3-across grid (stays 3 on mobile per your request) */
     .gallery{
       margin:18px auto 0;
       max-width:1080px;
       width:100%;
       display:grid;
-      grid-template-columns:repeat(3, 1fr);
+      grid-template-columns:repeat(3,1fr);
       gap:22px;
     }
     .card{
@@ -88,15 +71,15 @@
 
   <main>
     <section class="gallery">
-      <figure class="card"><img loading="lazy" src="images/0D55F740-F813-4E35-9898-6F4B685BF4DC.jpeg" alt="Pottery 1"></figure>
-      <figure class="card"><img loading="lazy" src="images/06AB1064-0DB4-400D-BABE-5940EB159457.jpeg" alt="Pottery 2"></figure>
-      <figure class="card"><img loading="lazy" src="images/6B0D1B0C-FC7E-4126-A842-0CFA9F12CD97.jpeg" alt="Pottery 3"></figure>
-      <figure class="card"><img loading="lazy" src="images/66C58EEC-67D0-4CC5-8CCF-5F8C42C522EB.jpeg" alt="Pottery 4"></figure>
-      <figure class="card"><img loading="lazy" src="images/E22AB82E-A3FC-402D-840C-2813F2453463.jpeg" alt="Pottery 5"></figure>
-      <figure class="card"><img loading="lazy" src="images/F03C43F6-ADCC-4EB1-AEC6-033CAB753CE2.jpeg" alt="Pottery 6"></figure>
-      <figure class="card"><img loading="lazy" src="images/6BD3459B-A9AB-40D4-8E7C-9BB919E296C9.jpeg" alt="Pottery 7"></figure>
-      <figure class="card"><img loading="lazy" src="images/3A4162E7-B337-4771-8108-C1615029D795.jpeg" alt="Pottery 8"></figure>
-      <figure class="card"><img loading="lazy" src="images/3FE9F2AC-CF11-4283-B84A-ED8EF1924189.jpeg" alt="Pottery 9"></figure>
+      <figure class="card"><img src="images/0D55F740-F813-4E35-9898-6F4B685BF4DC.jpeg" alt="Pottery 1"></figure>
+      <figure class="card"><img src="images/06AB1064-0DB4-400D-BABE-5940EB159457.jpeg" alt="Pottery 2"></figure>
+      <figure class="card"><img src="images/6B0D1B0C-FC7E-4126-A842-0CFA9F12CD97.jpeg" alt="Pottery 3"></figure>
+      <figure class="card"><img src="images/66C58EEC-67D0-4CC5-8CCF-5F8C42C522EB.jpeg" alt="Pottery 4"></figure>
+      <figure class="card"><img src="images/E22AB82E-A3FC-402D-840C-2813F2453463.jpeg" alt="Pottery 5"></figure>
+      <figure class="card"><img src="images/F03C43F6-ADCC-4EB1-AEC6-033CAB753CE2.jpeg" alt="Pottery 6"></figure>
+      <figure class="card"><img src="images/6BD3459B-A9AB-40D4-8E7C-9BB919E296C9.jpeg" alt="Pottery 7"></figure>
+      <figure class="card"><img src="images/3A4162E7-B337-4771-8108-C1615029D795.jpeg" alt="Pottery 8"></figure>
+      <figure class="card"><img src="images/3FE9F2AC-CF11-4283-B84A-ED8EF1924189.jpeg" alt="Pottery 9"></figure>
     </section>
   </main>
 </body>
