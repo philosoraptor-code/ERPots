@@ -6,9 +6,9 @@
   <title>ERpots | Pottery by Edward G. R. Ruse</title>
   <style>
     :root{
-      --sand:#d6c2ab;   /* background */
-      --earth:#5B4636;  /* text */
-      --stone:#cbb79c;  /* card */
+      --sand:#d6c2ab;
+      --earth:#5B4636;
+      --stone:#cbb79c;
     }
     *{box-sizing:border-box}
     html,body{margin:0}
@@ -38,6 +38,15 @@
       transition:transform .15s ease, background-color .15s ease, color .15s ease;
     }
     .newsletter a:hover{background:var(--earth);color:#fff;transform:translateY(-1px)}
+    .inquiries{
+      font-size:.85rem;
+      margin-top:.4rem;
+      color:#7a6753;
+    }
+    .inquiries a{
+      color:#7a6753;
+      text-decoration:underline;
+    }
     main{padding:0}
     .gallery{
       margin:0;
@@ -45,11 +54,11 @@
       width:100%;
       display:grid;
       grid-template-columns:1fr;
-      gap:2px; /* ultra-thin sliver between images */
+      gap:2px;
     }
     .card{
       position:relative;
-      border-radius:16px; /* rounded corners restored */
+      border-radius:16px;
       overflow:hidden;
       background:none;
       box-shadow:none;
@@ -59,7 +68,7 @@
       display:block;
       width:100%;
       height:auto;
-      border-radius:16px; /* match card rounding */
+      border-radius:16px;
     }
   </style>
 </head>
@@ -68,7 +77,10 @@
     <img src="ER.png" alt="ER Logo" style="width:62px; height:auto; margin:0 auto;" />
     <h2 style="font-size:1.13rem;">Pottery by Edward G. R. Ruse</h2>
     <div class="newsletter" style="transform:scale(1.05); transform-origin:top;">
-      <a href="#">Join Newsletter / Sale Updates</a>
+      <a href="https://erpots.beehiiv.com/subscribe" target="_blank">Join Newsletter / Sale Updates</a>
+    </div>
+    <div class="inquiries">
+      For inquiries, email <a href="mailto:edward@erpots.com">edward@erpots.com</a>
     </div>
   </header>
 
